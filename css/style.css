@@ -7,9 +7,11 @@
   font-weight: 600;
   display: flex;
   width: 96px;
-  align-items: center; }
+  align-items: center;
+  justify-content: flex-end; }
   .header-toggle p {
-    color: #5C4A4D; }
+    color: #5C4A4D;
+    padding-right: 20px; }
 
 .toggle-line__wrp {
   width: 22px;
@@ -22,6 +24,7 @@
   height: 2px;
   display: inline-block;
   position: absolute;
+  left: 0;
   background-color: #5C4A4D;
   border-radius: 5px; }
 
