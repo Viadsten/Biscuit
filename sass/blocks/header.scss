@@ -1,0 +1,246 @@
+.header{
+    width: 100%;
+}
+
+.header-toggle{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    font-weight: 600;
+    display: flex;
+    width: 96px;
+    align-items: center;
+    p{
+        color: #5C4A4D;
+    }
+}
+
+.toggle-line__wrp{
+    width: 22px;
+    height: 14px;
+    position: relative;
+}
+
+.toggle-line{
+    transition: .2s;
+    width: 22px;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    background-color: #5C4A4D;
+    border-radius: 5px;
+}
+.header-logo{
+    &:hover{
+        opacity: .6;
+    }
+}
+.toggle-line--first{
+    top: 0;
+}
+
+.toggle-line--second{
+    top: 6px;
+}
+
+.toggle-line--third{
+    top: 12px;
+}
+
+.toggle--active .toggle-line--first{
+    top: 6px;
+    transform: rotate(45Deg);
+}
+
+.toggle--active .toggle-line--second{
+    transform: scale(0, 1);
+}
+
+.toggle--active .toggle-line--third{
+    top: 6px;
+    transform: rotate(-45Deg);
+}
+
+.header--mobile{
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.header-nav{
+    margin-bottom: 30px;
+}
+
+.header-nav__first-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 170px;
+}
+
+.header-nav__first-link{
+    text-align: center;
+    text-decoration: none;
+    color: #AEA4A2;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover{
+        color: #5C4A4D;
+    }
+    
+}
+
+.header-nav__logo--desktop{
+    display: none;
+}
+
+.header-nav__second-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-nav__second-link{
+    font-weight: 600;
+    color: #5C4A4D;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    &:hover{
+        color: #EA854F;
+    }
+}
+
+.nav-left-side{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.search-btn{
+    margin-top: 2px;
+    border: none;
+    transition: .2s;
+    background-color: rgba(0,0,0,0);
+    svg{
+        fill: #5C4A4D;
+      }
+    &:hover{
+        svg{
+            fill: #EA854F !important;
+        }
+    }
+    &:active{
+        transform: scale(0.9);
+    }
+}
+
+.favorite-btn{
+    transition: .2s;
+    margin-top: 2px;
+    svg{
+        fill: none;
+        stroke: #5C4A4D; 
+    }
+    &:hover{
+        svg{
+            stroke: #EA854F;  
+        }
+    }
+    &:active{
+        transform: scale(0.9);
+    }
+}
+
+.nav-right-side{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    align-items: center;
+}
+
+.header-basket{
+    color: #5C4A4D;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover{
+        color: #EA854F;
+    }
+    
+}
+
+.header-banner{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 25px;
+    .header__banner-image{
+        width: 100%;
+    }
+}
+
+@media(min-width: 940px){
+    .header{
+        padding: 0 40px;
+    }
+    .header--mobile{
+        display: none;
+    }
+
+    .header-nav__first-list{
+        border-bottom: 1px solid #E0DAD4;
+        height: 50px;
+        align-items: center;
+        flex-direction: row;
+        :first-child{
+            width: 23%;
+            text-align: left;
+        }
+        :last-child{
+            text-align: right;
+            width: 23%;
+        }
+    }
+
+    .header-nav__second-list{
+        padding-top: 25px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .nav-left-side, .nav-right-side{
+            margin: 0;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 30%;
+            max-width: 300px;
+        }
+        .nav-right-side{
+            padding-left: 5%;
+        }
+
+        .header-nav__logo--desktop{
+            display: block;
+            width: 166px;
+            height: 72px;
+        }
+    }
+    .header-nav__second-link{
+        width: auto;
+        text-align: left;
+    }
+    .header-banner{
+        padding: 0;
+    }
+
+    .header-nav{
+        margin-bottom: 25px;
+    }
+    .header{
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+}
+

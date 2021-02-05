@@ -1,18 +1,16 @@
-@import "blocks/navigation.scss";
-@import "variables.scss";
-@import "blocks/statistic.scss";
-@import "blocks/advantages.scss";
-@import "blocks/news.scss";
-@import "blocks/review.scss";
-
+@import "blocks/header.scss";
+@import "blocks/card.scss";
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'PT Sans Narrow';
+  font-family: 'Nunito', sans-serif;
+  outline: none !important;
 }
 
 .page{
   display: grid;
+  background-color: #F1EBDF;
 }
+
