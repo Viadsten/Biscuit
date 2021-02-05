@@ -332,7 +332,7 @@
 
 @media (min-width: 630px) and (max-width: 720px) {
   .card-img-wrp img {
-    width: 115%; } }
+    width: 125%; } }
 
 @media (min-width: 940px) {
   .card-wrp {
@@ -370,7 +370,7 @@
 
 @media (min-width: 1119px) and (max-width: 1269px) {
   .card-img-wrp img {
-    width: 140%; } }
+    width: 145%; } }
 
 * {
   margin: 0;
