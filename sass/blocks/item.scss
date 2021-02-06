@@ -1,0 +1,219 @@
+.item-wrp{
+    width: 100%;
+    padding: 0 25px;
+}
+
+.item-img-wrp{
+    border-radius: 20px;
+    overflow: hidden;
+    line-height: 0;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.item-body-wrp{
+    margin-top: 30px;
+    h3{
+        font-family: 'Neucha', cursive;
+        font-size: 35px;
+        line-height: 40px;
+        color: #5C4A4D;
+        font-weight: 300;
+    }
+}
+
+.item-description{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    font-feature-settings: 'salt' on;
+    color: #716063;
+}
+
+.item-select{
+    .select__head{
+        border-radius: 16px;
+        padding: 32px 20px 12px 20px;
+        background-color: #FCFBF9;
+        color: #5C4A4D;
+        width: 100%;
+        font-weight: 600;
+        &::after{
+            bottom: 21px;
+            right: 21px;
+        }
+    }
+    .select__list{
+        left: 0;
+        top: 65px;
+        width: 100%;
+        border-radius: 16px;
+    }
+}
+
+.item-select--weight, .item-select--bases{
+    &::before{
+        content: 'Вес';
+        position: absolute;
+        z-index: 2;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        font-feature-settings: 'salt' on;
+        color: #AEA4A2;
+        top: 9px;
+        left: 20px;
+    }
+}
+
+.item-select--bases{
+    &::before{
+        content: 'Основа торта';
+    }
+}
+
+.item-btns{
+    display: flex;
+    justify-content: space-between;
+    button{
+        border-radius: 16px;
+        height: 55px;
+        width: calc(100% - 70px);
+        color: rgba(255, 255, 255, 0.64);
+        margin: 0;
+        i{
+            margin: 0 12px;
+        }
+        span{
+            color: #FCFBF9;
+        }
+    }
+    label{
+        width: 55px;
+        height: 55px;
+        border-radius: 16px;
+        background: #FCFBF9;
+        border: none;
+        
+    }
+    .card-favorite-btn:checked + label .favor-checked {
+        max-width: 20px;
+        max-height: 18px;
+    }
+    .favor-not-checked{
+        max-width: 20px;
+        max-height: 18px;
+        width: 20px;
+        height: 18px;
+    }
+    .favor-checked{
+        max-width: 0px;
+        max-height: 0px;
+        width: 20px;
+        height: 18px;
+    }
+}
+
+.item-text-wrp{
+    margin-bottom: 190px;
+    margin-top: 45px;
+    padding-top: 40px;
+    border-top: 1px solid #E0DAD4;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #AEA4A2;
+    p{
+        margin-bottom: 23px;
+    }
+}
+
+.basket-fixed{
+    cursor: pointer;
+    color: #FCFBF9;
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 600;
+    position: fixed;
+    width: 100%;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+    bottom: 0px;
+    background: #EA854F;
+    border-radius: 16px 16px 0px 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+.breadcrumb{
+    display: none;
+}
+.item-desktop-copyright{
+    display: none;
+}
+@media(min-width: 540px){
+    .item-select-wrp{
+        margin: 25px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .item-select{
+        width: 49%;
+    }
+}
+
+@media(min-width:940px){
+    .item-wrp{
+        align-items: flex-start; 
+        margin-top: 50px;
+        display: flex;
+        padding: 0 40px;
+        justify-content: space-between;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item-img-wrp{
+        width: calc(100% - 440px);
+    }
+    .item-body-wrp{
+        width: 400px;
+        margin-top: 0;
+    }
+    .item-select--weight{
+        width: 120px;
+        min-width: 120px;
+    }
+
+    .item-select--bases{
+        width: calc(100% - 140px);
+    }
+    .basket-fixed{
+        display: none;
+    }
+    .item-desktop-copyright{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        font-feature-settings: 'salt' on;
+        color: #AEA4A2;
+        margin-bottom: 50px;
+    }
+}
+
+@media(min-width:1350px){
+    .item-wrp{
+        padding: 0;
+        max-width: 1270px;
+    }
+}
