@@ -561,6 +561,7 @@ label {
       bottom: 21px;
       right: 21px; }
   .item-select .select__list {
+    margin-top: 10px;
     left: 0;
     top: 65px;
     width: 100%;
