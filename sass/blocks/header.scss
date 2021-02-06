@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+label{
+    cursor: pointer;
+}
+
 .header-toggle{
     border: none;
     background-color: rgba(0,0,0,0);
@@ -127,6 +131,7 @@
     margin-top: 2px;
     border: none;
     transition: .2s;
+    cursor: pointer;
     background-color: rgba(0,0,0,0);
     svg{
         fill: #5C4A4D;
@@ -202,12 +207,14 @@
         align-items: center;
         flex-direction: row;
         :first-child{
-            width: 23%;
+            margin-right: calc(50% - 313px);
             text-align: left;
+            width: 90px;
         }
         :last-child{
+            width: 128px;
             text-align: right;
-            width: 23%;
+            margin-left: calc(50% - 350px);
         }
     }
 

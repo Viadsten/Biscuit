@@ -34,9 +34,10 @@
 }
 
 .item-select{
+    max-width: unset;
     .select__head{
         border-radius: 16px;
-        padding: 32px 20px 12px 20px;
+        padding: 40px 20px 12px 20px;
         background-color: #FCFBF9;
         color: #5C4A4D;
         width: 100%;
@@ -65,7 +66,7 @@
         letter-spacing: 0.01em;
         font-feature-settings: 'salt' on;
         color: #AEA4A2;
-        top: 9px;
+        top: 12px;
         left: 20px;
     }
 }
@@ -119,7 +120,7 @@
 }
 
 .item-text-wrp{
-    margin-bottom: 190px;
+    margin-bottom: 140px;
     margin-top: 45px;
     padding-top: 40px;
     border-top: 1px solid #E0DAD4;
@@ -133,6 +134,7 @@
 }
 
 .basket-fixed{
+    text-decoration: none;
     cursor: pointer;
     color: #FCFBF9;
     font-size: 23px;
@@ -154,7 +156,16 @@
     display: none;
 }
 .item-desktop-copyright{
-    display: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    font-feature-settings: 'salt' on;
+    color: #AEA4A2;
+    margin-bottom: 90px;
 }
 @media(min-width: 540px){
     .item-select-wrp{
@@ -164,6 +175,10 @@
     }
 
     .item-select{
+        margin-bottom: 0;
+        .select__head{
+            margin-top: 0;
+        }
         width: 49%;
     }
 }
@@ -198,22 +213,39 @@
         display: none;
     }
     .item-desktop-copyright{
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.01em;
-        font-feature-settings: 'salt' on;
-        color: #AEA4A2;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+    }
+    .breadcrumb{
+        display: flex;
+        list-style: none;
+        margin-bottom: 28px;
+        .breadcrumb__link{
+            font-weight: 600;
+            margin-right: 12px;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.01em;
+            color: #AEA4A2;
+            text-decoration: none;
+            &::after{
+                margin-left: 12px;
+                content: url('../img/breadcrumb.svg');
+            }
+            &:hover{
+                color: #5C4A4D;
+            }
+        }
+        .breadcrumb__link--active{
+            &::after{
+                display: none;
+            }
+        }
     }
 }
 
-@media(min-width:1350px){
+@media(min-width:1119px){
     .item-wrp{
-        padding: 0;
-        max-width: 1270px;
+        max-width: 1350px;
+        padding: 0 80px;
     }
 }
