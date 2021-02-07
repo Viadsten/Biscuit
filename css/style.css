@@ -14,7 +14,8 @@ label {
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 2px; }
-  .header-toggle p {
+  .header-toggle i {
+    font-style: unset;
     color: #5C4A4D;
     padding-right: 10px;
     font-weight: 600;
@@ -23,7 +24,6 @@ label {
 
 .toggle-line__wrp {
   width: 22px;
-  margin-bottom: 3px;
   height: 14px;
   position: relative; }
 
