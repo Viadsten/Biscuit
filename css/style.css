@@ -144,6 +144,7 @@ label {
 
 .header-banner {
   margin: 0 auto;
+  display: block;
   width: 100%;
   padding: 0 25px; }
   .header-banner .header__banner-image {
@@ -526,10 +527,11 @@ label {
 .item-img-wrp {
   border-radius: 20px;
   overflow: hidden;
-  line-height: 0; }
+  line-height: 0;
+  height: auto; }
   .item-img-wrp img {
     width: 100%;
-    height: auto; }
+    height: min-content; }
 
 .item-body-wrp {
   margin-top: 30px; }
