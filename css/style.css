@@ -537,7 +537,7 @@ label {
   height: auto; }
   .item-img-wrp img {
     width: 100%;
-    height: min-content; }
+    height: auto; }
 
 .item-body-wrp {
   margin-top: 30px; }
