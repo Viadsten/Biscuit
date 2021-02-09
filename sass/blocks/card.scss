@@ -46,10 +46,12 @@
     line-height: 28px;
     font-feature-settings: 'salt' on;
     color: #5C4A4D;
+    padding-right: 8px;
 }
 
 .card-dividing-line{
     color: #E0DAD4;
+    padding-right: 8px;
 }
 .card-weight{
     font-size: 16px;
@@ -59,11 +61,12 @@
     color: #AEA4A2;
 }
 .card-number-wrp{
-    width: 135px;
+    //width: 135px;
     height: 30px;
     margin: 20px 24px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -81,7 +84,8 @@
 .card-basket-btn{
     cursor: pointer;
     margin-right: 12px;
-    width: 120px;
+    //width: 120px;
+    padding: 0 20px;
     height: 40px;
     background: #92525D;
     border-radius: 12px;
@@ -104,6 +108,7 @@
 
 .card-btns{
     margin-left: 24px;
+    margin-right: 24px;
     margin-top: auto;
     display: flex;
     
@@ -119,6 +124,7 @@
     border: 1px solid rgba(146, 82, 93, 0.24);
     border-radius: 12px;
     display: inline-block;
+    flex-shrink: 0;
     position: relative;
     &:hover{
         background: #F9F6F0;
@@ -190,6 +196,8 @@
             &:disabled{
                 color: #AEA4A2;
                 border: 1px solid #E0DAD4;
+                cursor: default;
+                background-color: #FCFBF9 !important;
             }
        }
     }
