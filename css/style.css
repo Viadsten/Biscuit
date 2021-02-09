@@ -936,9 +936,9 @@ label {
   .basket-input__check-wrp input + label::before {
     border: 2px solid #EA854F;
     border-radius: 50%;
-    width: 24px;
+    width: 20px;
     background-color: #FCFBF9;
-    height: 24px;
+    height: 20px;
     content: '';
     transition: .2s;
     position: absolute;
@@ -961,7 +961,7 @@ label {
   .basket-input__check-wrp label:last-child {
     margin-bottom: 0; }
   .basket-input__check-wrp input:checked + label::before {
-    box-shadow: 0 0 0 6px #FCFBF9 inset;
+    box-shadow: 0 0 0 4px #FCFBF9 inset;
     background-color: #EA854F; }
 
 .basket-input__before--adress::before {
@@ -1017,7 +1017,7 @@ label {
   line-height: 24px;
   color: #716063;
   margin-bottom: 4px; }
-  .basket__final-item p {
+  .basket__final-item span {
     color: #AEA4A2; }
   .basket__final-item:last-child {
     margin-bottom: 16px; }
