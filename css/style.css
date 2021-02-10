@@ -398,6 +398,10 @@ label {
   .card-img-wrp img {
     width: 120%; } }
 
+@media (min-width: 1119px) and (max-width: 1220px) {
+  .card-basket-btn:disabled {
+    padding: 0 7px; } }
+
 @media (min-width: 1119px) and (max-width: 1269px) {
   .card-img-wrp img {
     width: 145%; } }
@@ -1036,7 +1040,7 @@ label {
   justify-content: space-between; }
 
 @media (min-width: 540px) {
-  .item-select--bases {
+  .item-select--date, .item-select--time, .item-select--bases-basket {
     width: 100%;
     margin-bottom: 20px; }
   #delivery-check--1 + label, #pay-method-check--1 + label {

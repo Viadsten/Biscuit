@@ -210,7 +210,8 @@
 }
 
 @media(min-width: 540px){
-    .item-select--bases{
+
+    .item-select--date, .item-select--time, .item-select--bases-basket{
         width: 100%;
         margin-bottom: 20px;
     }
