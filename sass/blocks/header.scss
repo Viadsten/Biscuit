@@ -1,5 +1,6 @@
 .header{
     width: 100%;
+    transition: .2s;
 }
 
 label{
@@ -9,7 +10,7 @@ label{
 .header-toggle{
     border: none;
     background-color: rgba(0,0,0,0);
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     width: 96px;
     align-items: center;
@@ -18,7 +19,7 @@ label{
         font-style: unset;
         color: #5C4A4D;
         padding-right: 10px;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 23px;
         line-height: 28px
         
@@ -44,9 +45,7 @@ label{
     border-radius: 5px;
 }
 .header-logo{
-    &:hover{
-        opacity: .6;
-    }
+    
 }
 .toggle-line--first{
     top: 0;
@@ -76,7 +75,7 @@ label{
 
 .header--mobile{
     display: flex;
-    padding: 25px;
+    padding: 24px;
     justify-content: space-between;
 }
 
@@ -96,7 +95,7 @@ label{
     text-decoration: none;
     color: #AEA4A2;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     &:hover{
         color: #5C4A4D;
     }
@@ -114,7 +113,7 @@ label{
 }
 
 .header-nav__second-link{
-    font-weight: 600;
+    font-weight: 700;
     color: #5C4A4D;
     width: 100%;
     text-align: center;
@@ -180,7 +179,9 @@ label{
 
 .header-basket{
     color: #5C4A4D;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
     text-decoration: none;
     &:hover{
         color: #EA854F;
@@ -237,11 +238,11 @@ label{
             margin: 0;
             flex-direction: row;
             justify-content: space-between;
-            width: 30%;
-            max-width: 300px;
+            width: 296px;
         }
         .nav-right-side{
-            padding-left: 5%;
+            width: 276px;
+            margin-left: 20px;
         }
 
         .header-nav__logo--desktop{
@@ -251,6 +252,9 @@ label{
         }
     }
     .header-nav__second-link{
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 24px;
         width: auto;
         text-align: left;
     }
@@ -262,8 +266,14 @@ label{
         margin-bottom: 25px;
     }
     .header{
-        max-width: 1350px;
+        max-width: 1352px;
         margin: 0 auto;
     }
 }
 
+@media(min-width: 1400px){
+    .header{
+        
+        padding: 0;
+    }
+}

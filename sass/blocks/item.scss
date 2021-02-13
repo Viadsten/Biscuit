@@ -38,11 +38,11 @@
     max-width: unset;
     .select__head{
         border-radius: 16px;
-        padding: 40px 20px 12px 20px;
+        padding: 33px 20px 11px 20px;
         background-color: #FCFBF9;
         color: #5C4A4D;
         width: 100%;
-        font-weight: 600;
+        font-weight: 700;
         &::after{
             bottom: 21px;
             right: 21px;
@@ -141,7 +141,7 @@
     color: #FCFBF9;
     font-size: 23px;
     line-height: 28px;
-    font-weight: 600;
+    font-weight: 700;
     position: fixed;
     width: 100%;
     height: 68px;
@@ -222,7 +222,7 @@
         list-style: none;
         margin-bottom: 28px;
         .breadcrumb__link{
-            font-weight: 600;
+            font-weight: 700;
             margin-right: 12px;
             font-size: 16px;
             line-height: 20px;
@@ -247,7 +247,7 @@
 
 @media(min-width:1119px){
     .item-wrp{
-        max-width: 1350px;
-        padding: 0 80px;
+        max-width: 1352px;
+        padding: 0 40px;
     }
 }

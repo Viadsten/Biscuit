@@ -1,7 +1,7 @@
 .card-wrp{
     padding: 0 25px;
     margin-top: 25px;
-   
+   transition: .2s;
 }
 
 .card{
@@ -101,8 +101,10 @@
         background: #7D4550;
     }
     &:disabled{
-        background: #AEA4A2;
-        color: #E0DCDA;
+        color: #AEA4A2;
+        border: 1px solid #E0DAD4;
+        cursor: default;
+        background-color: #FCFBF9 !important;
     }
 }
 
@@ -264,5 +266,12 @@
                 width: 145%;
             }
         }
+    }
+}
+
+@media(min-width: 1400px){
+    .card-wrp{
+        
+        padding: 0;
     }
 }

@@ -12,6 +12,7 @@
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
   outline: none !important;
+  -webkit-tap-highlight-color:transparent;
 }
 
 .page{
@@ -19,3 +20,12 @@
   background-color: #F1EBDF;
 }
 
+
+input:not([type=checkbox]):not([type=radio]),
+textarea, 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color:transparent;
+}
