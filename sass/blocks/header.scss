@@ -126,11 +126,42 @@ label{
 .nav-left-side{
     margin-top: 15px;
     display: flex;
+    padding-bottom: 115px;
     flex-direction: column;
     align-items: center;
     height: 75px;
     width: 100%;
     justify-content: space-between;
+    a {
+        margin-bottom: 12px;
+        color: #AEA4A2;
+    }
+    .select {
+        &:hover {
+            .select__head {
+                color: #EA854F;
+            }
+        }
+        min-width: unset;
+        .select__list {
+            left: calc(50% - 82px);
+            li:hover {
+                a {
+                    color: #EA854F;
+                }
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .select__head {
+            margin: 0 auto;
+            &::after {
+                background: none;
+            }
+        }
+    }
 }
 
 .search-btn{
@@ -172,6 +203,7 @@ label{
 .nav-right-side{
     margin-top: 10px;
     display: flex;
+    margin-left: 0 !important;
     justify-content: space-between;
     width: 200px;
     align-items: center;
@@ -183,8 +215,21 @@ label{
     font-size: 19px;
     line-height: 24px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+
     &:hover{
         color: #EA854F;
+        svg{
+            stroke: #EA854F;
+            fill: #EA854F;
+        }
+    }
+
+    svg{
+        stroke: #5C4A4D;
+        fill: #5C4A4D;
+        margin-right: 11px;
     }
     
 }
@@ -241,14 +286,41 @@ label{
             width: 296px;
         }
         .nav-right-side{
-            width: 276px;
+            width: 212px;
             margin-left: 20px;
+            order: 3;
         }
 
         .header-nav__logo--desktop{
             display: block;
             width: 166px;
             height: 72px;
+            margin-right: 46px;
+        }
+
+        .nav-left-side{
+            
+            padding-bottom: 0;
+            width: 412px;
+            order: 2;
+
+            a {
+                color: #5C4A4D;
+            }
+            .select {
+                width: auto;
+                margin-bottom: 10px;
+                .select__head {
+                    font-size: 19px;
+                    line-height: 24px;
+                    color: #5C4A4D;
+                    font-weight: 700;
+                }
+                
+                .select__list {
+                    max-height: 350px;
+                }
+            }
         }
     }
     .header-nav__second-link{

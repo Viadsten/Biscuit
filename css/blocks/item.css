@@ -1,0 +1,202 @@
+@charset "UTF-8";
+.item-wrp {
+  width: 100%;
+  padding: 0 25px; }
+
+.item-img-wrp {
+  border-radius: 20px;
+  overflow: hidden;
+  line-height: 0;
+  height: auto; }
+  .item-img-wrp img {
+    width: 100%;
+    height: auto; }
+
+.item-body-wrp {
+  margin-top: 30px; }
+  .item-body-wrp h3 {
+    font-family: 'Neucha', cursive;
+    font-size: 35px;
+    line-height: 40px;
+    color: #5C4A4D;
+    font-weight: 300; }
+
+.item-description {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  font-feature-settings: 'salt' on;
+  color: #716063; }
+
+.item-select {
+  max-width: unset; }
+  .item-select .select__head {
+    border-radius: 16px;
+    padding: 33px 20px 11px 20px;
+    background-color: #FCFBF9;
+    color: #5C4A4D;
+    width: 100%;
+    font-weight: 700; }
+    .item-select .select__head::after {
+      bottom: 21px;
+      right: 21px; }
+  .item-select .select__list {
+    margin-top: 10px;
+    left: 0;
+    top: 65px;
+    width: 100%;
+    border-radius: 16px; }
+
+.item-select--weight::before, .item-select--bases::before {
+  content: 'Вес';
+  position: absolute;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  font-feature-settings: 'salt' on;
+  color: #AEA4A2;
+  top: 12px;
+  left: 20px; }
+
+.item-select--bases::before {
+  content: 'Основа торта'; }
+
+.item-btns {
+  display: flex;
+  justify-content: space-between; }
+  .item-btns button {
+    border-radius: 16px;
+    height: 55px;
+    width: calc(100% - 70px);
+    color: rgba(255, 255, 255, 0.64);
+    margin: 0; }
+    .item-btns button i {
+      margin: 0 12px; }
+    .item-btns button span {
+      color: #FCFBF9; }
+  .item-btns label {
+    width: 55px;
+    height: 55px;
+    border-radius: 16px;
+    background: #FCFBF9;
+    border: none; }
+  .item-btns .card-favorite-btn:checked + label .favor-checked {
+    max-width: 20px;
+    max-height: 18px; }
+  .item-btns .favor-not-checked {
+    max-width: 20px;
+    max-height: 18px;
+    width: 20px;
+    height: 18px; }
+  .item-btns .favor-checked {
+    max-width: 0px;
+    max-height: 0px;
+    width: 20px;
+    height: 18px; }
+
+.item-text-wrp {
+  margin-bottom: 140px;
+  margin-top: 45px;
+  padding-top: 40px;
+  border-top: 1px solid #E0DAD4;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #AEA4A2; }
+  .item-text-wrp p {
+    margin-bottom: 23px; }
+
+.basket-fixed {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FCFBF9;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 700;
+  position: fixed;
+  width: 100%;
+  height: 68px;
+  line-height: 68px;
+  text-align: center;
+  bottom: 0px;
+  background: #EA854F;
+  border-radius: 16px 16px 0px 0px;
+  left: 0px;
+  z-index: 100; }
+
+.breadcrumb {
+  display: none; }
+
+.item-desktop-copyright {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  font-feature-settings: 'salt' on;
+  color: #AEA4A2;
+  margin-bottom: 90px; }
+
+@media (min-width: 540px) {
+  .item-select-wrp {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between; }
+  .item-select {
+    margin-bottom: 0;
+    width: 49%; }
+    .item-select .select__head {
+      margin-top: 0; } }
+
+@media (min-width: 940px) {
+  .item-wrp {
+    align-items: flex-start;
+    margin-top: 50px;
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto; }
+  .item-img-wrp {
+    width: calc(100% - 440px); }
+  .item-body-wrp {
+    width: 400px;
+    margin-top: 0; }
+  .item-select--weight {
+    width: 120px;
+    min-width: 120px; }
+  .item-select--bases {
+    width: calc(100% - 140px); }
+  .basket-fixed {
+    display: none; }
+  .item-desktop-copyright {
+    margin-bottom: 40px; }
+  .breadcrumb {
+    display: flex;
+    list-style: none;
+    margin-bottom: 28px; }
+    .breadcrumb .breadcrumb__link {
+      font-weight: 700;
+      margin-right: 12px;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.01em;
+      color: #AEA4A2;
+      text-decoration: none; }
+      .breadcrumb .breadcrumb__link::after {
+        margin-left: 12px;
+        content: url("../img/breadcrumb.svg"); }
+      .breadcrumb .breadcrumb__link:hover {
+        color: #5C4A4D; }
+    .breadcrumb .breadcrumb__link--active::after {
+      display: none; } }
+
+@media (min-width: 1119px) {
+  .item-wrp {
+    max-width: 1352px;
+    padding: 0 40px; } }

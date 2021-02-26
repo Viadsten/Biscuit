@@ -1,0 +1,188 @@
+@charset "UTF-8";
+.basket-input__wrp {
+  margin: 0 25px; }
+
+.basket-input__title {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  color: #5C4A4D;
+  margin-bottom: 20px;
+  margin-top: 12px; }
+
+.basket-input__item {
+  width: 100%;
+  height: 68px;
+  padding: 12px 20px;
+  border: none;
+  margin-bottom: 20px;
+  background: #FCFBF9;
+  border-radius: 16px;
+  position: relative;
+  padding-top: 32px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #5C4A4D; }
+
+.basket-input__before {
+  display: block;
+  position: relative; }
+  .basket-input__before::before {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    top: 12px;
+    left: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #AEA4A2; }
+
+.basket-input__before--name::before {
+  content: 'Имя'; }
+
+.basket-input__before--tel::before {
+  content: 'Телефон'; }
+
+.basket-input__before--email::before {
+  content: 'Электронная почта'; }
+
+.basket-input__select .select__head {
+  font-size: 19px;
+  line-height: 24px;
+  margin-top: 0; }
+
+.basket-input__select .item-select--bases::before {
+  content: 'Город'; }
+
+.basket-input__select .select__list {
+  margin-top: 20px; }
+
+.basket-input__check-wrp {
+  width: 100%;
+  padding: 20px;
+  background: #FCFBF9;
+  border-radius: 16px;
+  margin-bottom: 20px; }
+  .basket-input__check-wrp input {
+    display: none; }
+  .basket-input__check-wrp input + label::before {
+    border: 2px solid #EA854F;
+    border-radius: 50%;
+    width: 20px;
+    background-color: #FCFBF9;
+    height: 20px;
+    content: '';
+    transition: .2s;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block; }
+  .basket-input__check-wrp label {
+    margin-bottom: 20px;
+    padding-left: 42px;
+    position: relative;
+    display: flex;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #5C4A4D;
+    flex-direction: column; }
+    .basket-input__check-wrp label span {
+      color: #AEA4A2; }
+  .basket-input__check-wrp label:last-child {
+    margin-bottom: 0; }
+  .basket-input__check-wrp input:checked + label::before {
+    box-shadow: 0 0 0 4px #FCFBF9 inset;
+    background-color: #EA854F; }
+
+.basket-input__before--adress::before {
+  font-weight: 700;
+  content: 'Адрес доставки'; }
+
+.basket-input__select .item-select--date::before {
+  content: 'Дата получения'; }
+
+.basket-input__select .item-select--time::before {
+  content: 'Интервал'; }
+
+.basket-input__before--comment::before {
+  content: 'Комментарий к заказу'; }
+
+.basket-input__before--coupon::before {
+  content: 'Купон'; }
+
+.basket__final-list {
+  background: #FCFBF9;
+  border-radius: 16px;
+  padding: 20px;
+  padding-bottom: 0; }
+  .basket__final-list button {
+    background: #92525D;
+    border-radius: 0px 0px 16px 16px;
+    border: none;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    height: 56px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #FCFBF9;
+    transition: .2s;
+    cursor: pointer; }
+    .basket__final-list button:hover {
+      background-color: #7D4550; }
+    .basket__final-list button:disabled {
+      background-color: #AEA4A2 !important;
+      color: #E0DCDA; }
+
+.basket-input__title--payment {
+  margin-top: 32px; }
+
+.basket__final-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #716063;
+  margin-bottom: 4px; }
+  .basket__final-item span {
+    color: #AEA4A2; }
+  .basket__final-item:last-child {
+    margin-bottom: 16px; }
+
+.basket-form {
+  margin-bottom: 60px; }
+
+.basket__final-count {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #5C4A4D;
+  display: flex;
+  padding-top: 16px;
+  border-top: 1px solid rgba(171, 168, 159, 0.18);
+  justify-content: space-between; }
+
+@media (min-width: 540px) {
+  .item-select--date, .item-select--time, .item-select--bases-basket {
+    width: 100%;
+    margin-bottom: 20px; }
+  #delivery-check--1 + label, #pay-method-check--1 + label {
+    margin-bottom: 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(171, 168, 159, 0.18); }
+  #delivery-check--2 + label, #pay-method-check--2 + label {
+    margin-top: 16px; }
+  #delivery-check--1 + label::before, #pay-method-check--1 + label::before {
+    top: calc(50% - 8px); }
+  .basket-input__select--date {
+    display: flex;
+    justify-content: space-between; }
+    .basket-input__select--date div {
+      width: 48%; } }

@@ -1,0 +1,125 @@
+@charset "UTF-8";
+.cabinet-login, .cabinet-registr {
+  max-width: 568px;
+  width: calc(100% - 48px);
+  margin: 45px auto; }
+
+.basket-input__before--code::before {
+  content: 'Код подтверждения' !important; }
+
+.cabinet-btn {
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  text-align: center;
+  background-color: #92525D;
+  border-radius: 16px;
+  border: none;
+  color: #FCFBF9;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700; }
+  .cabinet-btn:hover {
+    background-color: #7D4550; }
+
+.cabinet-registr {
+  margin-top: 80px; }
+
+.item-desktop-copyright--cabinet {
+  margin-top: 200px; }
+
+@media (min-width: 768px) {
+  .cabinet-login {
+    margin-top: 64px; }
+  .cabinet-registr {
+    margin-top: 180px; } }
+
+.cabinet-login, .cabinet-registr {
+  display: none; }
+
+.cabinet-input__wrp {
+  margin-top: 24px; }
+
+.basket-input__before--2nd-name::before {
+  content: 'Фамилия'; }
+
+@media (min-width: 940px) {
+  .cabinet-input__wrp {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 520px;
+    border-top: none; } }
+
+.cabinet-input__title {
+  margin-top: 28px; }
+
+.cabinet__order-wrp {
+  border-top: 1px solid rgba(171, 168, 159, 0.18);
+  padding-top: 24px;
+  border-bottom: 1px solid rgba(171, 168, 159, 0.18);
+  padding-bottom: 24px; }
+
+.cabinet__order-info {
+  color: #AEA4A2;
+  font-weight: 300;
+  line-height: 0px; }
+  .cabinet__order-info span {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #5C4A4D; }
+  .cabinet__order-info .cabinet__order-info--symbol {
+    height: 16px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 1px;
+    background-color: #AEA4A2;
+    display: inline-block; }
+
+.cabinet__order-status {
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #AEA4A2;
+  font-weight: 700; }
+
+.cabinet__card-wrp {
+  margin-top: 20px;
+  display: flex;
+  width: calc(100% + 12px);
+  flex-wrap: wrap; }
+
+.cabinet__card-img-wrp {
+  width: 80px;
+  height: 80px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  border-radius: 12px;
+  text-align: center; }
+  .cabinet__card-img-wrp img {
+    width: auto;
+    height: 100%;
+    transform: translateX(-16%); }
+
+.cabinet__delivery-info {
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #716063;
+  font-weight: 700; }
+
+.cabinet__order-btn {
+  width: 114px;
+  height: 40px;
+  background-color: #92525D;
+  border-radius: 12px;
+  text-align: center;
+  border: none;
+  margin-top: 26px;
+  color: #FCFBF9; }
+  .cabinet__order-btn:hover {
+    background-color: #7D4550; }

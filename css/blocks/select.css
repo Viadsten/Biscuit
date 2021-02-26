@@ -1,0 +1,78 @@
+.select {
+  position: relative;
+  display: block;
+  min-width: 220px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px; }
+
+.select__head {
+  width: max-content;
+  margin-top: 16px;
+  max-width: 100%;
+  position: relative;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #AEA4A2;
+  cursor: pointer; }
+
+.select__head::after {
+  width: 10px;
+  right: -18px;
+  height: 6px;
+  background: url("../img/select.svg") no-repeat center/cover;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  content: '';
+  display: block;
+  transition: .2s ease-in; }
+
+.select__head.open::after {
+  transform: translateY(50%) rotate(180deg); }
+
+.select__list {
+  display: none;
+  position: absolute;
+  top: 26px;
+  width: 165px;
+  font-weight: 700;
+  left: -7px;
+  right: 0;
+  background: #FCFBF9;
+  box-shadow: 0 0 4px rgba(126, 126, 126, 0.2);
+  border-radius: 10px;
+  margin-top: 5px;
+  max-height: 205px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  color: #AEA4A2;
+  font-size: 14px;
+  color: #424348;
+  scrollbar-color: dark;
+  scrollbar-width: thin;
+  overscroll-behavior: contain; }
+
+.select__list::-webkit-scrollbar {
+  width: 7px;
+  background-color: #F8F9FA;
+  padding: 5px; }
+
+.select__list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D9D9D9; }
+
+.select__list .select__item {
+  position: relative;
+  color: #5C4A4D;
+  border-top: 1px solid rgba(226, 226, 226, 0.35);
+  padding: 10px 15px;
+  cursor: pointer;
+  list-style-type: none; }
+
+.select__list .select__item:hover {
+  color: #EA854F; }
