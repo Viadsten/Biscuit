@@ -71,6 +71,7 @@
   color: #5C4A4D;
   border-top: 1px solid rgba(226, 226, 226, 0.35);
   padding: 10px 15px;
+  font-size: 16px !important;
   cursor: pointer;
   list-style-type: none; }
 

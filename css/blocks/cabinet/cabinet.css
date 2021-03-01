@@ -7,7 +7,11 @@
 .basket-input__before--code::before {
   content: 'Код подтверждения' !important; }
 
+.basket-input__before--code {
+  transition: .3s ease; }
+
 .cabinet-btn {
+  transition: .3s ease;
   cursor: pointer;
   width: 100%;
   height: 56px;
@@ -34,9 +38,6 @@
   .cabinet-registr {
     margin-top: 180px; } }
 
-.cabinet-login, .cabinet-registr {
-  display: none; }
-
 .cabinet-input__wrp {
   margin-top: 24px; }
 
@@ -45,6 +46,7 @@
 
 @media (min-width: 940px) {
   .cabinet-input__wrp {
+    transition: .3s ease;
     margin-left: auto !important;
     margin-right: auto !important;
     width: 520px;
@@ -91,6 +93,7 @@
   flex-wrap: wrap; }
 
 .cabinet__card-img-wrp {
+  display: block;
   width: 80px;
   height: 80px;
   margin-right: 12px;
@@ -115,6 +118,7 @@
 .cabinet__order-btn {
   width: 114px;
   height: 40px;
+  cursor: pointer;
   background-color: #92525D;
   border-radius: 12px;
   text-align: center;
@@ -123,3 +127,12 @@
   color: #FCFBF9; }
   .cabinet__order-btn:hover {
     background-color: #7D4550; }
+
+.basket-input__before--hidden, .cabinet-input__wrp--hidden {
+  transform: translateY(-50%);
+  position: relative;
+  z-index: -1;
+  opacity: 0; }
+
+.cabinet-btn--UpTo150 {
+  transform: translateY(-150%); }
