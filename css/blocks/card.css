@@ -187,11 +187,15 @@
   .card-wrp {
     max-width: 1350px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    justify-content: unset; }
     .card-wrp:after {
       width: calc(25% - 30px); }
   .card {
-    width: calc(25% - 30px); }
+    width: calc(25% - 30px);
+    margin-right: 40px; }
+    .card:nth-child(4n) {
+      margin-right: 0; }
   .card-img-wrp img {
     width: 120%; } }
 
