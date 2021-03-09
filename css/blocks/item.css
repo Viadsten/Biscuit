@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .item-wrp {
   width: 100%;
   padding: 0 25px; }
@@ -31,9 +30,22 @@
   color: #716063; }
 
 .item-select {
-  max-width: unset; }
+  max-width: unset;
+  position: relative; }
+  .item-select .item-select__title {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    left: 20px;
+    color: #AEA4A2;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    font-weight: 600; }
   .item-select .select__head {
     border-radius: 16px;
+    line-height: 24px;
+    height: 68px;
     padding: 33px 20px 11px 20px;
     background-color: #FCFBF9;
     color: #5C4A4D;
@@ -48,22 +60,6 @@
     top: 65px;
     width: 100%;
     border-radius: 16px; }
-
-.item-select--weight::before, .item-select--bases::before {
-  content: 'Вес';
-  position: absolute;
-  z-index: 2;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.01em;
-  font-feature-settings: 'salt' on;
-  color: #AEA4A2;
-  top: 12px;
-  left: 20px; }
-
-.item-select--bases::before {
-  content: 'Основа торта'; }
 
 .item-btns {
   display: flex;

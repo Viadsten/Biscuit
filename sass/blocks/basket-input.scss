@@ -32,7 +32,7 @@
     &__before{
         display: block;
         position: relative;
-        &::before{
+        .basket-input__title {
             position: absolute;
             z-index: 2;
             display: block;
@@ -40,21 +40,10 @@
             left: 20px;
             font-size: 16px;
             line-height: 20px;
+            margin: 0;
             letter-spacing: 0.01em;
             color: #AEA4A2;
         }
-    }
-
-    &__before--name::before{
-        content: 'Имя';
-    }
-
-    &__before--tel::before{
-        content: 'Телефон';
-    }
-
-    &__before--email::before{
-        content: 'Электронная почта';
     }
 
     &__select{
@@ -64,9 +53,7 @@
             margin-top: 0;
             
         }
-        .item-select--bases::before {
-            content: 'Город';
-        }
+        
         .select__list{
             margin-top: 20px;
         }
@@ -121,27 +108,6 @@
         }
     }
 
-    &__before--adress::before{
-        font-weight: 700;
-        content: 'Адрес доставки';
-    }
-    
-    &__select .item-select--date::before{
-        content: 'Дата получения';
-    }
-
-}
-.basket-input__select .item-select--time::before {
-    content: 'Интервал';
-}
-
-.basket-input__before--comment::before{
-    content: 'Комментарий к заказу';
-
-}
-
-.basket-input__before--coupon::before{
-    content: 'Купон';
 }
 
 .basket__final-list{
