@@ -190,6 +190,9 @@ label {
     height: auto; }
   .header-banner picture {
     display: flex; }
+  .header-banner img {
+    border-radius: 24px;
+    overflow: hidden; }
 
 @media (min-width: 940px) {
   .header {
@@ -287,10 +290,6 @@ label {
   .header-nav__second-list .nav-right-side .header-basket span {
     max-width: 120px; } }
 
-@media (min-width: 1400px) {
-  .header {
-    padding: 0; } }
-
 .card-wrp {
   padding: 0 25px;
   margin-top: 24px;
@@ -311,14 +310,9 @@ label {
   overflow: hidden;
   position: relative;
   border-top-left-radius: 15px;
-  border-top-right-radius: 15px; }
-  .card-img-wrp img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center; }
 
 @media (max-width: 340px) {
   .card-img-wrp img {
@@ -844,7 +838,7 @@ label {
 @media (min-width: 1119px) {
   .item-wrp {
     max-width: 1352px;
-    padding: 0 40px;
+    padding: 0 80px;
     margin-bottom: 40px; }
   .item-img-wrp {
     width: calc(100% - 480px); } }
@@ -1174,9 +1168,6 @@ label {
 
 .cabinet-input__wrp {
   margin-top: 24px; }
-
-.basket-input__before--2nd-name::before {
-  content: 'Фамилия'; }
 
 @media (min-width: 940px) {
   .cabinet-input__wrp {

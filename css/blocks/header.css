@@ -189,6 +189,9 @@ label {
     height: auto; }
   .header-banner picture {
     display: flex; }
+  .header-banner img {
+    border-radius: 24px;
+    overflow: hidden; }
 
 @media (min-width: 940px) {
   .header {
@@ -285,7 +288,3 @@ label {
 @media (min-width: 1100px) {
   .header-nav__second-list .nav-right-side .header-basket span {
     max-width: 120px; } }
-
-@media (min-width: 1400px) {
-  .header {
-    padding: 0; } }

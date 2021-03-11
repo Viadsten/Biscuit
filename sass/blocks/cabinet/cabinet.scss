@@ -57,11 +57,6 @@
     margin-top: 24px;
 }
 
-.basket-input__before--2nd-name{
-    &::before{
-        content: 'Фамилия';
-    }
-}
 
 @media (min-width: 940px){
     .cabinet-input__wrp{

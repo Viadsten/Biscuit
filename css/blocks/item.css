@@ -199,7 +199,7 @@
 @media (min-width: 1119px) {
   .item-wrp {
     max-width: 1352px;
-    padding: 0 40px;
+    padding: 0 80px;
     margin-bottom: 40px; }
   .item-img-wrp {
     width: calc(100% - 480px); } }

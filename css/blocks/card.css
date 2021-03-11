@@ -18,14 +18,9 @@
   overflow: hidden;
   position: relative;
   border-top-left-radius: 15px;
-  border-top-right-radius: 15px; }
-  .card-img-wrp img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center; }
 
 @media (max-width: 340px) {
   .card-img-wrp img {

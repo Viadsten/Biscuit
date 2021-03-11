@@ -247,11 +247,16 @@ label{
     padding: 0 25px;
     .header__banner-image{
         width: 100%;
-            height: auto;
+        height: auto;
     }
 
     picture {
         display: flex;
+    }
+
+    img {
+        border-radius: 24px;
+        overflow: hidden;
     }
 }
 
@@ -402,9 +407,3 @@ label{
     }
 }
 
-@media(min-width: 1400px){
-    .header{
-        
-        padding: 0;
-    }
-}
